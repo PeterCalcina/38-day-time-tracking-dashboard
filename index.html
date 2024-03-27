@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Frontend Club">
+    <meta name="description" content="Descripcion del proyecto">
+    <!-- Biblioteca de íconos Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Archivo reset Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <title>Time Tracking Dashboard</title>
+</head>
+
+<body>
+
+    <main class="cards_container">
+        <div class="card__info animation_start">
+            <div class="card__info__header">
+                <div class="image__container">
+                    <img src="images/image-jeremy.png" alt="Profile">
+                </div>
+
+                <h1 class="card__name">
+                    <span class="card__name__report">Report for</span>
+                    Jeremy Robson
+                </h1>
+            </div>
+
+            <ul class="card__info__time">
+                <li class="option__item" onclick="loadCards('Daily')">Daily</li>
+                <li class="option__item active" onclick="loadCards('Weekly')">Weekly</li>
+                <li class="option__item" onclick="loadCards('Monthly')">Monthly</li>
+            </ul>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
